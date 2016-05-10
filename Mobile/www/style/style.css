@@ -1,0 +1,679 @@
+/********** General **********/
+
+@font-face {
+    font-family: Designio;
+    src: url('fonts/designio.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src: url('fonts/segoeui.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src: url('fonts/segoeuib.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src: url('fonts/segoeuil.ttf');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src: url('fonts/seguisb.ttf');
+    font-weight: 300;
+}
+
+html, body, #content {
+    height: 100%;
+}
+
+Input::-webkit-input-placeholder {
+    font-style: normal !important;
+    color: #BBBBBB !important;
+}
+Input:-moz-placeholder {
+    font-style: normal !important;
+    color: #BBBBBB !important;
+}
+Input::-moz-placeholder {
+    font-style: normal !important;
+    color: #BBBBBB !important;
+}
+Input:-ms-input-placeholder {
+    font-style: normal !important;
+    color: #BBBBBB !important;
+}
+
+.sapMLabel, .sapMText, .sapMButton, .sapMInputBaseInner, .sapMSltLabel, .sapMSLITitleOnly, span {
+    font-family: SegoeUI;
+    text-shadow: none;
+}
+
+.sap-desktop .sapMRbBOut:focus {
+    outline: none !important;
+}
+
+.sapMBtnInner {
+    outline: none !important;
+}
+
+.sapMRbBOut:focus {
+    outline: none !important;
+}
+
+.header {
+    background-color: #21DBE8;
+    border-bottom: 1px solid white;
+}
+
+.header .sapMText, .header .sapMLabel {
+    font-size: 1.2rem;
+    font-family: Designio;
+    color: white !important;
+}
+
+.header .homeButton {
+    border-right: 1px solid white;
+    padding-right: 0.5rem;
+    padding-left: 0.2rem;
+}
+
+.header .headerTitle {
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
+
+.header .headerFirstName {
+    max-width: 8rem;
+    overflow: hidden;
+}
+
+.header .headerLogoutIcon {
+    padding: 0.5rem 0.2rem 0.7rem 0.2rem;
+    font-size: 1.3rem;
+}
+
+.footer {
+    position: absolute !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 3rem !important;
+    background-color: #FF745C !important;
+    border-bottom: none !important;
+    border-top: 1px solid white !important;
+}
+
+.footer .sapMText, .footer .sapMLabel,  {
+    font-family: SegoeUI;
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: white;
+}
+
+/********** Login page **********/
+
+#loginPage,
+#registerPage {
+    background-color: #34DEEA;
+}
+
+#loginPage .sapMInputBase,
+#registerPage .sapMInputBase {
+    padding: 0;
+    height: 2.5rem;
+}
+
+#loginPage .sapMInputBaseInner,
+#registerPage .sapMInputBaseInner{
+    border: none;
+    border-radius: 0.3rem;
+}
+
+#loginPage #emailInput .sapMInputBaseInner,
+#registerPage #emailRegisterInput .sapMInputBaseInner {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#loginPage #passwordInput .sapMInputBaseInner,
+#registerPage #repeatPasswordRegisterInput .sapMInputBaseInner {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#registerPage #passwordRegisterInput .sapMInputBaseInner {
+    border-radius: 0;
+}
+
+#loginPage .sapMLabel,
+#registerPage .sapMLabel {
+    color: white;
+    font-size: 1rem;
+}
+
+#loginPage .sapMRb .sapMLabel,
+#registerPage .sapMRb .sapMLabel {
+    font-weight: 100;
+}
+
+#loginPage .sapMRbB .sapMRbBOut,
+#registerPage .sapMRbB .sapMRbBOut {
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+#loginPage .sapMRbSel .sapMRbBInn,
+#registerPage .sapMRbSel .sapMRbBInn {
+    background-color: white;
+}
+
+#loginPage .sapMSlt,
+#registerPage .sapMSlt {
+    border: none;
+    border-radius: 0.3rem;
+}
+
+#loginPage .centeredLayout,
+#registerPage .centeredLayout,
+#submissionAlertPage .centeredLayout{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.legalDisclaimer span {
+    font-size: 0.8rem;
+}
+
+.sapMLabel#registerLabel {
+    margin-top: 2.9rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.sapMLabel#userTypeLabel {
+	line-height: 2.9rem;
+}
+
+#newHereLayout {
+    margin-top: 0.5rem;
+}
+
+.sapMLabel#firstUseLabel {
+    padding: 1rem 1rem 1rem 0.5rem;
+    font-size: 1rem;
+}
+
+.sapMLabel#separatorLabel {
+    margin: 0.95rem 0.05rem 0rem 0.05rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.sapMLabel#forgotPasswordLabel {
+    padding: 1rem 0.5rem 1rem 1rem;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.sapMLabel#disclaimerLabel {
+    margin-top: 8.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.sapMLabel#alreadyRegisteredLabel {
+    margin-top: 0.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.logoIcon {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/********** Register page **********/
+
+#emailInput .sapMInputBaseInner,
+#emailRegisterInput .sapMInputBaseInner,
+#passwordRegisterInput .sapMInputBaseInner {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+#contentLayout,
+#registerContentLayout {
+    position: absolute;
+    top: 0;
+    bottom: 3rem;
+    overflow: auto;
+}
+
+.sapMLabel#loginLabel,
+.sapMLabel#registerFooterLabel {
+    position: absolute;
+    bottom: 0;
+    background-color: #15BFCB;
+    border-top: 1px solid white;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    font-family: Designio;
+    font-size: 1.7rem;
+}
+
+#genderAndDiagnosisLayout {
+    margin-top: 0.5rem;
+}
+
+#genderSelect {
+    margin: 0;
+}
+
+#yearOfBirthInput,
+#diagnosisDateTimeInput {
+    margin-left: 0.5rem;
+}
+
+#diagnosisDateTimeInput label {
+	font-size: 0.85rem;
+}
+
+/********** Weekly tasks page **********/
+
+#weeklyTasksPage .sapMLabel.subtitle{
+    background-color: #15bfcb;
+    color: white;
+    padding: 0.5rem 0.2rem 0.5rem 0.5rem;
+    overflow: visible;
+}
+
+#weeklyTasksPage .sapMLIBContent{
+    background-color: #f2f2f2;
+    border-left-color: #ff745c;
+    border-width: 3px;
+    border-left-style: solid;
+    height: 100%;
+}
+
+#weeklyTasksPage .sapMLabel{
+    color: #4d4d4d;
+    font-weight: normal;
+}
+#weeklyTasksPage .sapMLIB{
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 2px solid white;
+}
+
+#weeklyTasksPage .taskIcon.sapMImg {
+    float: left;
+    width: 3rem;
+    margin: 0.7rem;
+}
+
+#weeklyTasksPage .task{
+    float: left;
+    font-size: 1rem;
+    margin-top: 1.8rem;
+}
+
+#weeklyTasksPage .dateStatus.sapMLabel.sapMLabelMaxWidth.sapUiSelectable
+{
+    text-align: center !important;
+    font-size: 0.8rem;
+    width: 100%;
+    margin-top: 0.2rem;
+}
+
+#weeklyTasksPage .statusIcon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#weeklyTasksPage .layout{
+    width: 6rem;
+    float: right;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    height: 100%;
+}
+
+/********** Completed page **********/
+
+#completedPage {
+    background-image: url('../images/BG.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+#completedPage #ribbonIcon {
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    display: table;
+}
+
+#completedPage #completedLabel{
+    color:#ffffff;
+    text-decoration: underline;
+    position: absolute;
+    bottom: 7rem;
+    font-size: 1.5rem;
+
+}
+
+/********** Questions page **********/
+
+#questionsPage {
+    height: 100%;
+}
+
+#question_layout {
+    height: 100%;
+}
+
+#question_layout section{
+    background-color: #e6e6e6;
+}
+
+#question_layout .sapUiVltCell.sapuiVltCell:nth-child(2){
+    position: absolute;
+    top: 3rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.question_footer {
+    width: 100%;
+    position: absolute;
+}
+
+.questions_header {
+    background-color: #15bfcb;
+    width: 100%;
+    height: 3rem;
+}
+.questions_sub_header {
+    background-color: #15bfcb;
+    width: 100%;
+    height: 2rem;
+}
+
+.questions_header>div{
+    vertical-align: middle;
+}
+.questions_header>div{
+    vertical-align: top;
+}
+
+.questions_header .sapMLabel{
+    position: absolute;
+    top: 0.75rem;
+    font-size: 1rem;
+    color: #FFF;
+    font-weight: normal;
+}
+
+.questions_header .sapMLabel.page_num{
+    right: 1rem;
+}
+
+.questions_header .sapMLabel.question_title{
+    left: 1rem;
+    font-weight: 100;
+}
+
+.questions_sub_header .sapMLabel{
+    position: absolute;
+    font-size: 1rem;
+    color: #FFF;
+    font-weight: normal;
+}
+.questions_sub_header .sapMLabel.question_sub_title{
+    left: 1rem;
+}
+
+.finishLayout {
+    position: absolute;
+    bottom: 0;
+    background-color: #15BFCB;
+    border-top: 1px solid white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-family: Designio;
+    font-size: 1.7rem;
+}
+
+.footerButton {
+    -background-color: transparent !important;
+    position: absolute;
+    display: inline-block;
+}
+
+.footerButton > div {
+    outline: none !important;
+    background-color: transparent !important;
+    background-image: none;
+    color: white;
+    border: none;
+}
+
+.footerButton .sapMBtnIcon {
+    width: 1rem;
+}
+
+.footerButton.finishButton .sapMBtnIcon{
+    width: 5.5rem;
+    margin-top: 0.2rem;
+}
+
+.footerButton.footerGoToStartButton .sapMBtnIcon{
+    width: 2.5rem;
+    margin-top: 0.1rem;
+}
+
+.footerPrevButton {
+    left: 0rem;
+}
+
+.footerGoToStartButton {
+	 left: 0rem;
+}
+
+.footerPrevButtonWithGoToStartButton {
+    border-left: 2px solid white !important;
+    right: 34%%;
+}
+
+.footerNextButton {
+    border-left: 2px solid white !important;
+    right: 0rem;
+}
+
+.footerClearButton {
+    border-left: 2px solid white !important;
+    right: 32%;
+}
+
+.footerClearButton span {
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+
+
+.remarks .sapMFlexItem:last-child {
+    padding: 0 1rem 0 !important;
+    background-color: #e6e6e6;
+    border-bottom: 0;
+}
+
+.remarks .sapMFlexItem{
+    height: 4rem;
+}
+
+.remarks .sapMFlexItem:first-child {
+   height: 3rem;
+}
+
+.remarks label {
+    color: #4d4d4d;
+    font-weight: 100;
+    white-space: pre-wrap;
+    height: 100%;
+    vertical-align: middle;
+    line-height: 1.3rem;
+}
+
+.remarks .sapMFlexItem .sapMRbBOut{
+    background-color: transparent;
+    border: 1px solid #4d4d4d;
+}
+
+.remarks .sapMFlexItem .sapMPointer {
+    padding-top: 0.5rem;
+    width: 100%;
+}
+
+.remarks .sapMFlexItem .sapMInput {
+    padding-top: 0.7rem;
+}
+
+.remarks .sapMFlexItem{
+    border-bottom: 1px solid #cccccc;
+    background-color: #f2f2f2;
+}
+
+.remarks .sapMFlexItem:last-child {
+    position: absolute;
+    bottom: 3rem;
+    left: 0;
+    right: 0;
+}
+
+.remarks .sapMFlexItem:last-child .sapMInputBasePlaceholder{
+    font-weight: 100;
+    font-style: normal;
+    font-family: SegoeUI;
+    color: #808080;
+    line-height: 2.5rem;
+}
+
+.remarks .sapMFlexItem:last-child .sapMInputBaseInner{
+    border-radius: 1rem;
+    border: 1px solid #808080;
+}
+
+.remarks .sapMRbSel .sapMRbBInn {
+    background-color: white;
+}
+
+.remarks .sapMFlexItem.selected {
+    background-color: #FF745C;
+}
+
+.remarks .sapMFlexItem.selected label {
+    color: white;
+}
+
+.remarks .sapMFlexItem.selected .sapMRbBOut {
+    border-color: white;
+}
+
+.remarks .sapMFlexItem .sapMRbB {
+	max-width: 18%;
+}
+
+.remarks .sapMPointer label {
+    margin-top: -0.75rem;
+    font-size: 1rem;
+    max-width: 80%;
+}
+
+/********* Handwriting **********/
+
+.hwCanvas{
+    height: 80%;
+    width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+    -webkit-flex-direction: column !important;
+    justify-content: space-around !important;
+    -webkit-justify-content: space-around !important;
+    align-items: center !important;
+    -webkit-align-items:center !important;
+}
+
+canvas {
+    display: inline-block;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.viz{
+    position: inherit !important;
+}
+
+#handwritingClearButton {
+    left: 32%;
+}
+
+#handwritingClearButton span {
+    font-size: 2em;
+    font-weight: 100;
+}
+
+/********* SPEECH *********/
+
+#speechPage 	{
+    text-align: center !important;
+    width: 100%;
+    font-family: Designio;
+}
+
+#speechPage #questions_header {
+    width: 100%;
+}
+
+#speech_layout .sapUiVltCell.sapuiVltCell:nth-child(2){
+    position: absolute;
+    top: 3rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.speech_micImg {
+    margin-top: 2rem;
+    width: 16rem;
+    outline: none;
+}
+
+.recordLabel.sapMLabel{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    height: 2rem;
+}
+
+.speechReplay.sapMLabel {
+    text-align: center !important;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    height: 2rem;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+		<title>ALS Application</title>
+
+		<link type="text/css" rel="stylesheet" href="style/loader.css"/>
+
+		<script type="text/javascript" src="js/recordmp3/recordmp3.js"></script>
+        <script type="text/javascript" src="js/recordmp3/MobileRecorder.js"></script>
+        <script type="text/javascript" src="js/writing/RecordableDrawing.js"></script>
+		<script type="text/javascript" src="js/writing/drawingSerializer.js"></script>
+		<script type="text/javascript" src="js/fragments.js"></script>
+		<script type="text/javascript" src="loader.js"></script>
+
+
+	</head>
+
+	<body class='sapUiBody'>
+		<div id='content'>
+			<div id="splash-screen" style="width: 100%; height: 100%;">
+				<div class="splash-screen-circle-inner"></div>
+				<div id="loader-image"></div>
+			</div>
+		</div>
+		<script>
+			loader.load('https://openui5.hana.ondemand.com/resources/sap-ui-core.js', 'sap-ui-bootstrap', 'sap.ui.commons, sap.m', 'sap_bluecrystal', loader.onSAPUI5Loaded);
+		</script>
+
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+
+	</body>
+</html>

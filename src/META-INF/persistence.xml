@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="als" transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<class>com.sap.als.persistence.Patient</class>
+		<class>com.sap.als.persistence.Questionnaire</class>
+		<class>com.sap.als.persistence.QuestionnaireAnswer</class>
+		<class>com.sap.als.persistence.WritingTest</class>
+		<class>com.sap.als.persistence.WritingTestDrawing</class>
+		<class>com.sap.als.persistence.SpeechTest</class>
+		<class>com.sap.als.persistence.SpeechTestRecording</class>
+		<class>com.sap.als.persistence.BreathTest</class>
+		<class>com.sap.als.persistence.BreathTestRecording</class>
+		<class>com.sap.als.persistence.SMSTest</class>
+		<class>com.sap.als.persistence.SMSTestMessage</class>
+		<class>com.sap.als.persistence.CallTest</class>
+		<class>com.sap.als.persistence.CallTestCall</class>
+		<class>com.sap.als.persistence.StepTest</class>
+		<class>com.sap.als.persistence.StepTestAxis</class>
+		<class>com.sap.als.persistence.PasswordResetToken</class>
+		<class>com.sap.als.persistence.TappingTest</class>
+		<class>com.sap.als.persistence.TappingTestResult</class>
+		<class>com.sap.als.persistence.TappingDuration</class>
+		<properties>
+			<!-- <property name="eclipselink.logging.level" value="FINE"/>-->
+			 <property name="eclipselink.ddl-generation" value="create-or-extend-tables" />
+		</properties>
+	</persistence-unit>
+</persistence>
